@@ -2,12 +2,82 @@
 <html>
 <head>
     <title>Upload File</title>
+    <style>
+        body {
+            background-color: rgb(228, 215, 215);
+            color: rgba(255, 255, 255, 0.78);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+        padding: 80px; /* Increased from 40px to provide more internal space */
+        background-color: #000000f3; /* Darker background for the box */
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 6px 6px 6px 6px #595959;
+        width: 50%; /* Adjust this value to control the width of the container */
+        max-width: 800px; /* Optional: prevents the box from becoming too wide on larger screens */
+        }
+
+
+        h2 {
+            margin-top: 0;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .button-63, .label-63 {
+          align-items: center;
+          background-color: #950000; /* Base color */
+          background-image: linear-gradient(rgb(8, 8, 124), rgba(0, 0, 0, 0.258)); /* Glossy effect */
+          border: none;
+          border-radius: 8px;
+          box-shadow: 5px 5px 5px 5px #666; /* 3D effect */
+          color: #FFFFFF;
+          display: inline-flex;
+          font-family: Phantomsans, sans-serif;
+          font-size: 20px;
+          justify-content: center;
+          line-height: 1em;
+          padding: 19px 24px;
+          text-decoration:none;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          cursor: pointer;
+          transition: all 0.3s ease; /* Smooth transition for click effect */
+        }
+
+        .button-63:active, .label-63:active {
+          box-shadow: 0 2px #666; /* Adjust box shadow to give pressed effect */
+          transform: translateY(4px); /* Move down to simulate press */
+        }
+
+        @media (min-width: 768px) {
+          .button-63, .label-63 {
+            font-size: 24px;
+            padding: 22px 28px;
+          }
+        }
+    </style>
 </head>
 <body>
-    <h2>Upload a Binary File</h2>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" required>
-        <button type="submit">Upload</button>
-    </form>
+    <div class="container">
+        <h2>MD5 Hash Check</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" id="file" name="file" required>
+            <label for="file" class="label-63" role="button">Choose File</label>
+            <hr style="background: transparent; border: none; height: 0;">
+            <hr style="background: transparent; border: none; height: 0;">
+            <button class="button-63" type="submit">Upload</button>
+        </form>
+    </div>
 </body>
 </html>
