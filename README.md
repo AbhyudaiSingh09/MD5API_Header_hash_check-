@@ -42,6 +42,8 @@ go test -v
 For an in-depth walkthrough and demonstration, please refer to the video tutorial linked below:
 
 [![Binary File MD5 Hash Checker](http://img.youtube.com/vi/VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=VIDEO_ID "Binary File MD5 Hash Checker")
+![Screenshot](https://github.com/Axs7941/MD5API_Header_hash_check-/blob/main/Screenshot%202024-02-11%20at%2010.15.03%E2%80%AFPM.png)
+
 
 [View Demo Video](https://github.com/Axs7941/MD5API_Header_hash_check-/blob/main/MD5api_Demo.mov)
 
